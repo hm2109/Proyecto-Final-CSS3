@@ -1,0 +1,362 @@
+/* --------- Inicializar elementos --------- */
+
+html, boody, head, footer, figure, h1, h2, h3, h4, h5, h6, section, ul, li {
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	list-style: none;
+	color: black;
+}
+
+/* --------- Estilos Generales --------- */
+
+/* --------- Estilos Cabezera --------- */
+
+#nav-menu-navegacion ul li {
+	list-style: none;
+	width: 33.33%;
+	float: left;
+}
+
+#nav-menu-navegacion ul li a{
+	color: white;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.current-page {
+	text-decoration: none;
+}
+
+/* --------- Estilos Contenido --------- */
+
+#section-imagen-central {
+	background-color: #82c3a6;
+	text-align: center;
+}
+
+#img-central {
+	margin: 5% 0%;
+	width: 80%;
+	box-shadow: 2px 2px 2px #02010a;
+		-webkit-box-shadow: 2px 2px 2px #02010a;
+		-moz-box-shadow: 2px 2px 2px #02010a;
+}
+
+.div-imagen-secundaria {
+	text-align: center;
+}
+
+#img-paisajes {
+	margin: 5%;
+	width: 80%;
+	border: 1px solid black;
+	box-shadow: 2px 2px 2px #02010a;
+		-webkit-box-shadow: 2px 2px 2px #02010a;
+		-moz-box-shadow: 2px 2px 2px #02010a;	
+	transition-property: transform;
+		-webkit-transition-property: transform;
+		-moz-transition-property: transform;
+	transition-duration: 0.5s;
+		-webkit-transition-duration: 0.5s;
+		-moz-transition-duration: 0.5;
+}
+
+#img-paisajes:hover{
+	border: 2px solid black;
+	box-shadow: 2px 2px 2px #82c3a6;
+		-webkit-box-shadow: 2px 2px 2px #02010a;
+		-moz-box-shadow: 2px 2px 2px #02010a;	
+	transform: rotate(10deg);
+		-webkit-transform: rotate(10deg);
+		-moz-transform: rotate(10 deg);
+}
+
+#img-retratos {
+	margin: 5%;
+	width: 80%;
+	border: 1px solid black;
+	box-shadow: 2px 2px 2px #02010a;
+		-webkit-box-shadow: 2px 2px 2px #02010a;
+		-moz-box-shadow: 2px 2px 2px #02010a;		
+	transition-property: transform;
+	transition-duration: 1s; 
+}
+
+#img-retratos:hover{
+	border: 2px solid black;
+	box-shadow: 2px 2px 2px #82c3a6;
+		-webkit-box-shadow: 2px 2px 2px #82c3a6;
+		-moz-box-shadow: 2px 2px 2px #82c3a6;		
+	transform: translate(20px, -5px);
+		-webkit-transition-property: transform;
+		-moz-transition-property: transform;	
+}
+
+.div-enlace {
+	margin-bottom: 3%;
+}
+
+.div-imagen-secundaria a {
+	font-size: 1.3rem;
+	font-weight: bold;
+	color: black;
+	text-decoration: underline;
+}
+
+.section-galeria figure img {
+	margin: 5%;
+	width: 80%;
+	border: 1px solid black;
+	box-shadow: 2px 2px 2px #02010a;
+		-webkit-box-shadow: 2px 2px 2px #02010a;
+		-moz-box-shadow: 2px 2px 2px #02010a;	
+}	
+
+.section-galeria figure:first-child {
+	filter: blur(10px);
+	-webkit-filter: blur(10px);
+}
+
+.section-galeria figure:nth-child(even) img {
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+}
+
+.section-galeria figure:nth-child(3) img {
+	filter: sepia(90%);
+	-webkit-filter: sepia(90%);
+}
+
+
+/* --------- Estilos Footer --------- */
+
+.footer-title {
+	margin-bottom: 5%;
+	font-size: 1.3rem;
+}
+
+.footer-title a {
+	font-size: 1.3rem;
+}
+
+.footer-content {
+	font-size: 0.9rem;
+}
+
+.footer-icon {
+	width: 30px;
+	margin-right: 5%;
+	float: left;
+}
+
+.footer-image {
+	width: 100%;
+}
+
+
+.footer-column {
+	margin: 5%;
+	width: 95%;
+}
+
+.footer-element {
+	width: 80%;
+	margin-top: 1%;
+	float: left;
+	line-height: 5px;
+	font-size: 0.8rem;
+	font-weight: bold;
+}
+
+/* ---------- Efectos del cuerpo ----------- */
+
+@keyframes bodyTranslate {
+	0% {
+		margin-top: 150%;
+	}
+	
+	60% {
+		margin-top: -5%;
+	}
+	
+	100% {
+		margin-top: 0%;
+	}
+}
+
+
+/* ---------- Estilos personalizados a min-width 900px ---------- */
+
+@media (min-width: 900px) {
+	body {
+		font-family: 'Dancing Script', cursive;
+		width: 900px;
+		margin: 0px auto;
+		background: #02010a;
+		animation-name: bodyTranslate;
+			-webkit-animation-name: bodyTranslate;
+			-moz-animation-name: bodyATranslate;
+		animation-duration: 1s;
+			-webkit-animation-duration: 1s;
+			-moz-animation-duration: 1s;
+	}
+	
+	/* --------- Estilos Cabezera --------- */
+
+	#cabezera {
+		display: flex;
+		flex-direction: row;
+		background: #5b7989;
+		height: 90px;
+		margin: 0px;
+		border-top-right-radius: 10px;
+			-webkit-border-top-right-radius: 10px;
+		border-top-left-radius: 10px;
+			-webkit-border-top-left-radius: 10px;
+		line-height: 90px;
+	}
+	
+	#cabezera h1 {
+		color: white;
+		margin: 0 0 0 30px;
+		font-size: 2.5rem;
+		text-shadow: 2px 2px 2px #02010a
+	}	
+	
+	#titulo {
+		width: 50%;
+		margin: 0 0 30px 0;
+		float: left;
+	}
+
+	#nav-menu-navegacion {
+		width: 45%;
+		height:90px;
+		float: right;
+		text-align: center;
+	}
+	
+	/* --------- Estilos Contenido --------- */
+
+	#section-imagen-secundaria {
+		display: flex;
+		flex-direction: row;
+		background: #d5c75f;
+	}
+	
+	.section-galeria {
+		display: flex;
+		flex-wrap: wrap;
+		background: #d5c75f;
+	}
+	
+	.section-galeria figure {
+		width: 33.33%
+	}
+
+	/* --------- Estilos Footer --------- */
+
+	footer {
+		display: flex;
+		padding: 15px 0;
+		flex-direction: row;
+		background: #C6d5c5;
+		border-bottom-right-radius: 10px;
+			-webkit-border-top-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+			-webkit-border-top-left-radius: 10px;
+	}
+	
+	footer section {
+		margin: 0% 2%;
+		width: 22.5%;
+	}
+}
+
+/* ---------- Estilos personalizados a max-width 900px ---------- */
+
+@media (max-width: 900px) {
+	body {
+		font-family: 'Dancing Script', cursive;
+		width: 100%;
+		margin: 0px auto;
+		background: #02010a;
+		animation-name: bodyTranslate;
+			-webkit-animation-name: bodyTranslate;
+			-moz-animation-name: bodyTranslate;
+		animation-duration: 1.25s;
+			-webkit-animation-duration: 1.25s;
+			-moz-animation-duration: 1.25s;
+	}
+	
+	/* --------- Estilos Cabezera --------- */
+
+	#cabezera {
+		display: flex;
+		flex-direction: column;
+		background: #5b7989;
+		height: 180px;
+		margin: 0px;
+		border-top-right-radius: 10px; 
+			-webkit-border-top-right-radius: 10px;
+		border-top-left-radius: 10px;
+			-webkit-border-top-left-radius: 10px;
+	}
+	
+	#cabezera h1 {
+		color: white;
+		margin: auto;
+		font-size: 2.5rem;
+		text-shadow: 2px 2px 2px #02010a
+	}	
+	
+	#titulo {
+		width: 80%;
+		margin: auto;
+		text-align: center;
+	}
+
+	#nav-menu-navegacion {
+		width: 80%;
+		height: 90px;
+		margin: 20px auto;
+		text-align: center;
+	}	
+
+	/* --------- Estilos Contenido --------- */
+
+	#section-imagen-secundaria {
+		display: flex;
+		flex-direction: column; 
+		background: #d5c75f;
+	}
+	
+	.section-galeria {
+		display: flex;
+		flex-wrap: wrap;
+		background: #d5c75f;
+	}
+	
+	.section-galeria figure {
+		width: 100%;
+		text-align: center;
+	}	
+	
+	/* --------- Estilos Footer --------- */
+
+	footer {
+		display: flex;
+		flex-direction: column;
+		background: #C6d5c5;
+		border-bottom-right-radius: 10px;
+			-webkit-border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+			-webkit-border-bottom-left-radius: 10px;
+	}
+	
+	footer section {
+		margin: 0% auto;
+		width: 90%;
+	}
+}
